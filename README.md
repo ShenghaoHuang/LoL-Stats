@@ -1,5 +1,6 @@
 # LoL-Stats
 ![alt text](https://github.com/ShenghaoHuang/LoL-Stats/blob/main/images/league-logo.png?raw=true)
+
 League of Legends is a team-based strategy game where two teams of five champions face off to destroy the other's base. With over 140 champions to choose from, how can we improve our chances of winning based on statistics and champion win rates.
 
 ## Getting Started
@@ -11,17 +12,23 @@ There are multiple steps to take here to clean the data.
 1. First we have to get a user's account history of matches played from:
 https://developer.riotgames.com/apis#match-v4/GET_getMatchlist
 ![alt text](https://github.com/ShenghaoHuang/LoL-Stats/blob/main/images/match_history_api.png?raw=true)
+
 I want to then save all records of "gameID" so I can then query it into 
+
 https://developer.riotgames.com/apis#match-v4/GET_getMatch
 which will return details about the match. 
--INSERT PICTURE OF MATCH DETAILS-
+
 ![alt text](https://github.com/ShenghaoHuang/LoL-Stats/blob/main/images/match_details_api.png?raw=true)
+
+
 2. Based off the information we get from matchs, store the details into json/database?
 3. Create a panda's dataframe and then create data visualzation graphs with the data.
 
 ## Features?
 1. Show a player's match history up to past 20 games. Currently you can only see your past 20 games you have played.
 2. Show a player's champion statistics from highest to lowest
+
+
 ![alt text](https://github.com/ShenghaoHuang/LoL-Stats/blob/main/images/champion_stats.png?raw=true)
 
 ## Storage plans
